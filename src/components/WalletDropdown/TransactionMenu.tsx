@@ -141,8 +141,8 @@ export const TransactionHistoryMenu = ({ onClose }: { onClose: () => void }) => 
 
   const confirmedTransactions = useMemo(() => getConfirmedTransactions(confirmed), [confirmed])
 
-  if (pending.length) transactionGroupsInformation.push({ title: `Pending (${pending.length})`, transactions: pending })
-  if (confirmedTransactions.length) transactionGroupsInformation.push(...confirmedTransactions)
+  // if (pending.length) transactionGroupsInformation.push({ title: `Pending (${pending.length})`, transactions: pending })
+  // if (confirmedTransactions.length) transactionGroupsInformation.push(...confirmedTransactions)
 
   return (
     <SlideOutMenu
@@ -151,17 +151,17 @@ export const TransactionHistoryMenu = ({ onClose }: { onClose: () => void }) => 
       title={<Trans>Transactions</Trans>}
     >
       <Divider />
-      {transactionGroupsInformation.length > 0 ? (
+      {/* {transactionGroupsInformation.length > 0 ? (
         <>
           {transactionGroupsInformation.map((transactionInformation, index) => (
-            <TransactionList key={transactionInformation.title} transactionInformation={transactionInformation} />
+            <TransactionList key={transactionInformation.} transactionInformation={transactionInformation} />
           ))}
-        </>
-      ) : (
+        </> */}
+      {/* ) : (
         <EmptyTransaction>
           <Trans>Your transactions will appear here</Trans>
         </EmptyTransaction>
-      )}
+      )} */}
     </SlideOutMenu>
   )
 }
