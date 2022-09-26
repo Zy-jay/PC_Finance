@@ -1,0 +1,61 @@
+.App {
+  text-align: center;
+}
+html{
+ background-color: #212429; 
+}
+
+
+
+@font-face {
+  font-family: "Upheaval Pro";
+  src: local("Regular"),
+  url(./assets/fonts/UpheavalPro.ttf) format("truetype"),
+  url(./assets/fonts/Segoe\ UI.woff) format("woff"),
+  url(./assets/fonts/Segoe\ UI\ Bold\ Italic.woff) format("woff");
+    font-family: "Upheaval Pro";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  font-family: 'Upheaval Pro', sans-serif;
+  box-sizing: border-box;
+  background-color: #1F0D35;
+    margin: auto;
+
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
